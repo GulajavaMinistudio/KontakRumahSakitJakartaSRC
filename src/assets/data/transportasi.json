@@ -1,0 +1,71 @@
+{
+  "data": {
+    "status": "success",
+    "kontak": [
+      {
+        "nama": "Travel Cipaganti",
+        "telepon": "022 8600 8800 , "
+      },
+      {
+        "nama": "Travel Cipaganti",
+        "telepon": "022 6126 650"
+      },
+      {
+        "nama": "Travel Cipaganti",
+        "telepon": "022 9117 3131"
+      },
+      {
+        "nama": "Travel Cititrans",
+        "telepon": "022 9119 0300,  "
+      },
+      {
+        "nama": "Travel Cititrans",
+        "telepon": "022 7035 5300"
+      },
+      {
+        "nama": "Travel Cititrans",
+        "telepon": "0804 111 1000"
+      },
+      {
+        "nama": "Travel Daytrans",
+        "telepon": "022 7063 6868"
+      },
+      {
+        "nama": "Travel Baraya",
+        "telepon": "022 7531 415"
+      },
+      {
+        "nama": "Travel X-Trans",
+        "telepon": "022 820 62555"
+      },
+      {
+        "nama": "Travel X-Trans",
+        "telepon": "022 7084 0555"
+      },
+      {
+        "nama": "Travel X-Trans",
+        "telepon": "022 8206 2555"
+      },
+      {
+        "nama": "Travel Pamitran",
+        "telepon": "022 7312 769 "
+      },
+      {
+        "nama": "Taxi Bluebird",
+        "telepon": "022 7561 234"
+      },
+      {
+        "nama": "Taxi Gemah Ripah",
+        "telepon": "022 4217 070"
+      },
+      {
+        "nama": "Call Center PT Kereta Api",
+        "telepon": "021 121"
+      },
+      {
+        "nama": "Call Center PT Kereta Api",
+        "telepon": "021 2139 1121"
+      }
+    ]
+  }
+}

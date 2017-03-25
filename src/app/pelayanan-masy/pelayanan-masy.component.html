@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8">
+
+      <div class="container" id="main">
+
+        <span class="font-settings-droid">
+          Halaman yang berisi daftar nomor telepon untuk layanan dan informasi publik yang berada di kota Bandung dan sekitarnya. Gunakan kotak pencarian
+          di bawah ini untuk melakukan pencarian dengan cepat.
+        </span>
+
+        <!--kotak pencarian-->
+        <div class="padding-searchbar">
+
+          <div class="well well-lg">
+            <form>
+              <div class="lebar-input-search">
+                <label for="form_pencarian">Kotak Pencarian</label>
+                <input type="text" class="form-control" id="form_pencarian" name="input_form_pencarian"
+                       placeholder="Kata kunci nama kontak telepon" [(ngModel)]="search_katakunci">
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <!--<div id="garis-pemisah-hr">-->
+        <!--<hr>-->
+        <!--</div>-->
+
+        <!--daftar kontak rumah sakit dalam list-->
+        <ul class="list-unstyled" id="list-kontak">
+
+          <li *ngFor="let itemkontak of listDataKontak | filterSearchKontak : search_katakunci">
+            <div class="list-item-kontak-namenumber">
+              <div class="circle-app-name-orange">
+              </div>
+            </div>
+
+            <div class="list-item-kontak-namenumber">
+              <span class="list-item-kontak-span-title">
+                {{itemkontak.nama}}
+              </span>
+              <br>
+              <span class="list-item-kontak-span-subtitle">
+                Telp : {{itemkontak.telepon}}
+              </span>
+            </div>
+
+            <div class="garis-pemisah-hr-listitem"></div>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <br>
+      <br>
+
+    </div>
+
+  </div>
+</div>

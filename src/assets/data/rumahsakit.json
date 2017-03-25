@@ -1,0 +1,243 @@
+{
+  "data": {
+    "status": "success",
+    "kontak": [
+      {
+        "nama": "RSUP Hasan Sadikin",
+        "telepon": "022 2034 953"
+      },
+      {
+        "nama": "RSUP Hasan Sadikin",
+        "telepon": "022 2034 955"
+      },
+      {
+        "nama": "RSUP Hasan Sadikin Instalasi Gawat Darurat",
+        "telepon": "022 2551 198"
+      },
+      {
+        "nama": "RSUP Hasan Sadikin Instalasi Gawat Darurat",
+        "telepon": "022 2551 191"
+      },
+      {
+        "nama": "RSUP Hasan Sadikin Pavilliun Parahyangan",
+        "telepon": "022 2031 440"
+      },
+      {
+        "nama": "RSUP Hasan Sadikin Pavilliun Parahyangan",
+        "telepon": "022 2035 986"
+      },
+      {
+        "nama": "RSUD Ujung Berung Kota Bandung",
+        "telepon": "022 7800 017"
+      },
+      {
+        "nama": "RSUD Ujung Berung Kota Bandung",
+        "telepon": "022 7811 794"
+      },
+      {
+        "nama": "RSB Astanaanyar",
+        "telepon": "022 5201 139"
+      },
+      {
+        "nama": "RSU Sarlika Asih",
+        "telepon": "022 5229 544"
+      },
+      {
+        "nama": "RSU Advent",
+        "telepon": "022 2034 386"
+      },
+      {
+        "nama": "RSU Advent",
+        "telepon": "022 2034 389"
+      },
+      {
+        "nama": "RSU Santo Borromeus",
+        "telepon": "022 2552 000"
+      },
+      {
+        "nama": "RSU Santo Yusuf",
+        "telepon": "022 7208 172"
+      },
+      {
+        "nama": "RSU Muhammadiyah",
+        "telepon": "022 7301 062"
+      },
+      {
+        "nama": "RSU Muhammadiyah",
+        "telepon": "022 7312 167"
+      },
+      {
+        "nama": "RSU Al Islam",
+        "telepon": "022 7562 046"
+      },
+      {
+        "nama": "RSU Al Islam",
+        "telepon": "022 7565 588"
+      },
+      {
+        "nama": "RSU Pindad",
+        "telepon": "022 7321 964"
+      },
+      {
+        "nama": "RSUD Cibabat Cimahi",
+        "telepon": "022 6652 025"
+      },
+      {
+        "nama": "RSUD Soreang",
+        "telepon": "022 5896 590"
+      },
+      {
+        "nama": "RSUD Majalaya",
+        "telepon": "022 5950 035"
+      },
+      {
+        "nama": "RSU Lanud Sulaiman",
+        "telepon": "022 5409 608"
+      },
+      {
+        "nama": "RSU Al Ichsan",
+        "telepon": "022 5940 872"
+      },
+      {
+        "nama": "RSU Al Ichsan",
+        "telepon": "022 5941 719"
+      },
+      {
+        "nama": "RSU Rajawali",
+        "telepon": "022 6011 913"
+      },
+      {
+        "nama": "RSU Rajawali",
+        "telepon": "022 6031 087"
+      },
+      {
+        "nama": "RSU Limijati",
+        "telepon": "022 4207 770"
+      },
+      {
+        "nama": "RS Dustira Cimahi",
+        "telepon": "022 6633 967"
+      },
+      {
+        "nama": "RSU Kebonjati",
+        "telepon": "022 6140 658"
+      },
+      {
+        "nama": "RS Cahya Kawaluyan",
+        "telepon": "022 6803 700"
+      },
+      {
+        "nama": "RS Cahya Kawaluyan",
+        "telepon": "022 6803 701"
+      },
+      {
+        "nama": "RSAU dr. M. Salamun",
+        "telepon": "022 2032 090"
+      },
+      {
+        "nama": "RSAU dr. M. Salamun IGD",
+        "telepon": "022 7666 6118"
+      },
+      {
+        "nama": "RSU Bungsu",
+        "telepon": "022 4231 550"
+      },
+      {
+        "nama": "RSU Bungsu",
+        "telepon": "022 4217 371"
+      },
+      {
+        "nama": "RSU Immanuel",
+        "telepon": "022 5201 656"
+      },
+      {
+        "nama": "RSU Immanuel",
+        "telepon": "022 5201 051"
+      },
+      {
+        "nama": "RS Mata Cicendo",
+        "telepon": "022 4231 280"
+      },
+      {
+        "nama": "RS Mata Cicendo",
+        "telepon": "022 4231 281"
+      },
+      {
+        "nama": "RS Bedah Halmahera",
+        "telepon": "022 4206 061"
+      },
+      {
+        "nama": "RS Paru Dr. H.A Rotinsulu",
+        "telepon": "022 2934 446"
+      },
+      {
+        "nama": "RS Paru Dr. H.A Rotinsulu",
+        "telepon": "022 2031 427"
+      },
+      {
+        "nama": "RSU Bina Sehat",
+        "telepon": "022 5207 964"
+      },
+      {
+        "nama": "RSU Bina Sehat",
+        "telepon": "022 5207 965"
+      },
+      {
+        "nama": "RS Santosa Bandung International Hospital (Emergency)",
+        "telepon": "022 4248555"
+      },
+      {
+        "nama": "RS Mitra Kasih Cibabat",
+        "telepon": "022 6642 409"
+      },
+      {
+        "nama": "RS Mitra Kasih Cibabat",
+        "telepon": "022 6654 852"
+      },
+      {
+        "nama": "RSU Hermina Pasteur",
+        "telepon": "022 6072 525"
+      },
+      {
+        "nama": "RSU Hermina Pasteur",
+        "telepon": "022 6080 4422"
+      },
+      {
+        "nama": "RS Melinda Hospital",
+        "telepon": "022 4222 788"
+      },
+      {
+        "nama": "RSU Annisa Medical Center",
+        "telepon": "022 7781 630"
+      },
+      {
+        "nama": "RS Hermina Arcamanik",
+        "telepon": "022 8724 2525"
+      },
+      {
+        "nama": "RS Hermina Arcamanik UGD",
+        "telepon": "022 7103 330"
+      },
+      {
+        "nama": "RS Melinda 2",
+        "telepon": "022 4233 777"
+      },
+      {
+        "nama": "RS Melinda 2 UGD",
+        "telepon": "022 4232 777"
+      },
+      {
+        "nama": "RSU Kasih Bunda",
+        "telepon": "022 6614 221"
+      },
+      {
+        "nama": "RSU Kasih Bunda UGD",
+        "telepon": "022 6631 999"
+      },
+      {
+        "nama": "Balai Besar Kesehatan Paru Masyarakat Bandung",
+        "telepon": "022 6011 523"
+      }
+    ]
+  }
+}

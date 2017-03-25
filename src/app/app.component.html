@@ -1,3 +1,59 @@
-<h1>
-  {{title}}
-</h1>
+<html>
+<body>
+
+<div id="outer">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img class="img-responsive" [src]="'assets/bdg-branding128.png'" alt="Kontak Bandung">
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+
+        <ul class="nav navbar-nav">
+
+          <!--isi menu kontak-->
+          <li>
+            <a [routerLink]="['/puskesmas']" [routerLinkActive]="['active']">Puskesmas
+              <span class="sr-only">(current)</span></a>
+          </li>
+          <li><a [routerLink]="['/rumah-sakit-umum']" [routerLinkActive]="['active']">Rumah Sakit Umum</a></li>
+          <li><a [routerLink]="['/pelayanan']" [routerLinkActive]="['active']">Rumah Sakit Khusus</a></li>
+
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a [routerLink]="['/tentangapp']" [routerLinkActive]="['active']">Tentang</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </div>
+
+    <!--progressbar-->
+    <div *ngIf="isLoadingBar" class="progress-line"></div>
+
+  </nav>
+
+  <!--routing untuk SPA-->
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+
+</div>
+
+</body>
+</html>

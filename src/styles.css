@@ -1,1 +1,268 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*membuat tampilan jadi full screen*/
+/** {*/
+/*margin: 0;*/
+/*padding: 0;*/
+/*}*/
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #f1f4f9;
+}
+
+#outer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f1f4f9;
+}
+
+.font-settings {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12pt;
+}
+
+.font-settings-droid {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 11pt;
+}
+
+/* NAVBAR */
+
+/*nav{*/
+/*width: 100%;*/
+/*max-width: 100%;*/
+/*margin: 0 auto;*/
+/*}*/
+
+/*nav h1 {*/
+/*font-size: 24px;*/
+/*font-weight: normal;*/
+/*display: inline-block;*/
+/*}*/
+
+/*nav ul{*/
+/*padding: 0 !important;*/
+/*background: #0288d1;*/
+/*display: flex;*/
+/*box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);*/
+/*border-radius: 2px;*/
+/*margin-top: 0;*/
+/*}*/
+
+/*nav li{*/
+/*flex-basis: auto;*/
+/*!*flex-grow: 1;*!*/
+/*padding-left: 1em;*/
+/*list-style-type: none;*/
+/*}*/
+
+/*nav a{*/
+/*text-align: center;*/
+/*padding: 16px 16px;*/
+/*color: #eee;*/
+/*display: block;*/
+/*font-weight: bold;*/
+/*text-decoration: none;*/
+/*}*/
+
+/*nav a:hover{*/
+/*background: #1298e1;*/
+/*}*/
+
+/*nav a.active {*/
+/*background: #1298e1;*/
+/*}*/
+
+/*.brands {*/
+/*height: 36px;*/
+/*margin-top: 5px;*/
+/*}*/
+
+/* Padding navbar dengan teks keterangan di atasnya */
+.padding-searchbar {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.padding-bottom-cardview {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.lebar-input-search {
+  width: 100%;
+}
+
+#list-kontak {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: table;
+}
+
+#list-kontak li {
+  list-style-type: none;
+  margin: 8px 0;
+}
+
+#garis-pemisah-hr hr {
+  width: 100%;
+  border-top: 1px solid #cecece;
+}
+
+.garis-pemisah-hr-listitem {
+  border-top: 1px solid #e4e4e4;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-left: 2.9em;
+}
+
+.list-item-kontak-span-title {
+  color: #424242;
+  width: 100%;
+  font-weight: bold;
+  font-size: 11pt;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.list-item-kontak-span-subtitle {
+  color: #607D8B;
+  font-weight: bold;
+  font-size: 11pt;
+  font-family: Helvetica, sans-serif;
+}
+
+.list-item-kontak-namenumber {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.circle-app-name {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  background: #EA5455;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.circle-app-name-green {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  background: #3ac569;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.circle-app-name-orange {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  background: #F68657;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.circle-app-name-purple {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  background: #e94e77;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+/*progress bar*/
+.progress-line, .progress-line:before {
+  height: 2px;
+  width: 100%;
+  margin: 0;
+}
+
+.progress-line {
+  background-color: transparent;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.progress-line:before {
+  background-color: #e5f43f;
+  content: '';
+  -webkit-animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/*progress line loading awal halaman*/
+.progress-line-load, .progress-line-load:before {
+  height: 3px;
+  width: 100%;
+  margin: 0;
+}
+
+.progress-line-load {
+  background-color: transparent;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.progress-line-load:before {
+  background-color: #DD356E;
+  content: '';
+  -webkit-animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@-webkit-keyframes running-progress {
+  0% {
+    margin-left: 0;
+    margin-right: 100%;
+  }
+  50% {
+    margin-left: 25%;
+    margin-right: 0;
+  }
+  100% {
+    margin-left: 100%;
+    margin-right: 0;
+  }
+}
+
+@keyframes running-progress {
+  0% {
+    margin-left: 0;
+    margin-right: 100%;
+  }
+  50% {
+    margin-left: 25%;
+    margin-right: 0;
+  }
+  100% {
+    margin-left: 100%;
+    margin-right: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
