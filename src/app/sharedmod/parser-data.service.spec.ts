@@ -1,6 +1,6 @@
-import { TestBed, inject } from '@angular/core/testing';
+import {inject, TestBed} from '@angular/core/testing';
 
-import { ParserDataService } from './parser-data.service';
+import {ParserDataService} from './parser-data.service';
 
 describe('ParserDataService', () => {
   beforeEach(() => {

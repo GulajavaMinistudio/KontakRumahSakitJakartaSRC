@@ -1,5 +1,5 @@
-import {async, ComponentFixture, TestBed} from "@angular/core/testing";
-import {HalamanGagalKosongComponent} from "./halaman-gagal-kosong.component";
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {HalamanGagalKosongComponent} from './halaman-gagal-kosong.component';
 
 describe('HalamanGagalKosongComponent', () => {
   let component: HalamanGagalKosongComponent;

@@ -32,7 +32,9 @@ export class KontakItemRSU {
   public latitude: number;
   public longitude: number;
 
-  constructor(id: number, nama_rsu: string, jenis_rsu: string, location: LocationRSU, kode_pos: string, telepon: string[], faximile: string[], website: string, email: string, kode_kota: number, kode_kecamatan: number, kode_kelurahan: number, latitude: number, longitude: number) {
+  constructor(id: number, nama_rsu: string, jenis_rsu: string, location: LocationRSU, kode_pos: string, telepon: string[],
+              faximile: string[], website: string, email: string, kode_kota: number, kode_kecamatan: number,
+              kode_kelurahan: number, latitude: number, longitude: number) {
     this.id = id;
     this.nama_rsu = nama_rsu;
     this.jenis_rsu = jenis_rsu;

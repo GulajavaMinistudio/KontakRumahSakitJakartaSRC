@@ -17,7 +17,7 @@ export class RumahSakitUmumJakartaComponent implements OnInit, OnDestroy {
 
   private isLoadingBar = false;
 
-  constructor(private _http: RumahSakitUmumService,
+  constructor(private httpServ: RumahSakitUmumService,
               private stores: StoreDataService,
               private parserData: ParserDataService,
               private windowgetter: WindowGetterService) {
@@ -50,7 +50,7 @@ export class RumahSakitUmumJakartaComponent implements OnInit, OnDestroy {
 
     this.isLoadingBar = true;
 
-    this._http.getDataRumahSakitUmumJKT()
+    this.httpServ.getDataRumahSakitUmumJKT()
       .subscribe(
         (hasil: KontakRSUObject) => {
 

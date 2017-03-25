@@ -3,6 +3,7 @@ import {Response} from '@angular/http';
 import {KontakItemPuskesmas, LocationMap} from '../puskesmasjkt/class-datas/kontak-item-puskesmas';
 import {KontakItemRSU, LocationRSU} from '../rumah-sakit-umum/class-data/kontak-item-rsumum';
 import {Observable} from 'rxjs';
+import {KontakItemRSK, LocationRSK} from '../rumah-sakit-khusus/class-datas/kontak-item-rsks';
 
 @Injectable()
 export class ParserDataService {
@@ -64,36 +65,35 @@ export class ParserDataService {
     return listSort;
   }
 
-
-  // sort kontak
+  // urutkan rumah sakit khusus dari ascending
   // urutkan array secara ascending dengan membandingkan dua parameter
-  // sortKontakAscending(list: any[]): any {
-  //
-  //   let listSort: any[] = list;
-  //
-  //   try {
-  //     listSort.sort(
-  //       (item1, item2): number => {
-  //
-  //         let nama1 = item1.nama;
-  //         let nama2 = item2.nama;
-  //
-  //         if (nama1 < nama2) {
-  //           return -1;
-  //         }
-  //         if (nama1 > nama2) {
-  //           return 1;
-  //         }
-  //         return 0;
-  //       }
-  //     );
-  //   } catch (e) {
-  //     console.log(e);
-  //   }
-  //
-  //   return listSort;
-  // }
+  sortKontakRSKAsc(list: KontakItemRSK[]): any {
 
+    const listSort: KontakItemRSK[] = list;
+
+    try {
+
+      listSort.sort(
+        (item1, item2): number => {
+
+          const nama1 = item1.jenis_rsk + ' ' + item1.nama_rsk;
+          const nama2 = item2.jenis_rsk + ' ' + item2.nama_rsk;
+
+          if (nama1 < nama2) {
+            return -1;
+          }
+          if (nama1 > nama2) {
+            return 1;
+          }
+          return 0;
+        }
+      );
+    } catch (e) {
+      console.log(e);
+    }
+
+    return listSort;
+  }
 
   // susun google maps
   public susunLinkGoogleMapsPuskesmas(lokasi: LocationMap): string {
@@ -108,6 +108,17 @@ export class ParserDataService {
 
   // susun google maps
   public susunLinkGoogleMapsRSU(lokasi: LocationRSU): string {
+
+    // http://maps.google.com/?q=<lat>,<lng>
+    const latitude = lokasi.latitude;
+    const longitude = lokasi.longitude;
+    const lokasiGoogleMaps: string = 'http://maps.google.com/?q=' + latitude + ',' + longitude;
+
+    return lokasiGoogleMaps.trim();
+  }
+
+  // susun google maps
+  public susunLinkGoogleMapsRSK(lokasi: LocationRSK): string {
 
     // http://maps.google.com/?q=<lat>,<lng>
     const latitude = lokasi.latitude;

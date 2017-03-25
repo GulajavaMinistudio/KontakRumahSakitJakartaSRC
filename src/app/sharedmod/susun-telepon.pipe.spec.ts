@@ -1,4 +1,4 @@
-import { SusunTeleponPipe } from './susun-telepon.pipe';
+import {SusunTeleponPipe} from './susun-telepon.pipe';
 
 describe('SusunTeleponPipe', () => {
   it('create an instance', () => {

@@ -1,13 +1,14 @@
 import {Injectable} from '@angular/core';
 import {KontakItemPuskesmas} from '../puskesmasjkt/class-datas/kontak-item-puskesmas';
 import {KontakItemRSU} from '../rumah-sakit-umum/class-data/kontak-item-rsumum';
+import {KontakItemRSK} from '../rumah-sakit-khusus/class-datas/kontak-item-rsks';
 
 @Injectable()
 export class StoreDataService {
 
   private _storeListPuskesmas: KontakItemPuskesmas[] = [];
   private _storeListRSUmum: KontakItemRSU[] = [];
-  private _storeListRSKhusus: any = [];
+  private _storeListRSKhusus: KontakItemRSK[] = [];
 
   constructor() {
   }
@@ -29,11 +30,11 @@ export class StoreDataService {
     this._storeListRSUmum = value;
   }
 
-  getStoreListRSKhusus(): any {
+  getStoreListRSKhusus(): KontakItemRSK[] {
     return this._storeListRSKhusus;
   }
 
-  setStoreListRSKhusus(value: any) {
+  setStoreListRSKhusus(value: KontakItemRSK[]) {
     this._storeListRSKhusus = value;
   }
 }

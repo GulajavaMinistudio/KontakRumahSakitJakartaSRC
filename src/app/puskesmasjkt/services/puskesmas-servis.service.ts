@@ -1,7 +1,7 @@
-import {Injectable} from "@angular/core";
-import {Headers, Http, RequestOptions} from "@angular/http";
-import {ParserDataService} from "../../sharedmod/parser-data.service";
-import {BASE_URLS, DATA_AKSES_API} from "../../kontak-akses/kontak-data-akses";
+import {Injectable} from '@angular/core';
+import {Headers, Http, RequestOptions} from '@angular/http';
+import {ParserDataService} from '../../sharedmod/parser-data.service';
+import {BASE_URLS, DATA_AKSES_API} from '../../kontak-akses/kontak-data-akses';
 
 @Injectable()
 export class PuskesmasServisService {

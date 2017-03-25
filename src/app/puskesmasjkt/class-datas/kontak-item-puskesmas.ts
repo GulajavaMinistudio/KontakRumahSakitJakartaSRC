@@ -29,7 +29,9 @@ export class KontakItemPuskesmas {
   public kode_kelurahan: number;
 
 
-  constructor(id: number, nama_Puskesmas: string, location: LocationMap, telepon: string[], faximile: string[], email: string, kepala_puskesmas: string, kode_kota: number, kode_kecamatan: number, kode_kelurahan: number) {
+  constructor(id: number, nama_Puskesmas: string, location: LocationMap,
+              telepon: string[], faximile: string[], email: string, kepala_puskesmas: string, kode_kota: number,
+              kode_kecamatan: number, kode_kelurahan: number) {
     this.id = id;
     this.nama_Puskesmas = nama_Puskesmas;
     this.location = location;

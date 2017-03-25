@@ -17,7 +17,7 @@ export class PuskesmasJakartaComponent implements OnInit, OnDestroy {
 
   private isLoadingBar = false;
 
-  constructor(private _http: PuskesmasServisService,
+  constructor(private httpServ: PuskesmasServisService,
               private stores: StoreDataService,
               private parserData: ParserDataService,
               private windowgetter: WindowGetterService) {
@@ -50,7 +50,7 @@ export class PuskesmasJakartaComponent implements OnInit, OnDestroy {
 
     this.isLoadingBar = true;
 
-    this._http.getDataPuskesmasJKT()
+    this.httpServ.getDataPuskesmasJKT()
       .subscribe(
         (hasil: PuskesmasObject) => {
 

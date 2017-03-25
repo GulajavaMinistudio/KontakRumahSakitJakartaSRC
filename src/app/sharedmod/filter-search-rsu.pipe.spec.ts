@@ -1,4 +1,4 @@
-import { FilterSearchRsuPipe } from './filter-search-rsu.pipe';
+import {FilterSearchRsuPipe} from './filter-search-rsu.pipe';
 
 describe('FilterSearchRsuPipe', () => {
   it('create an instance', () => {
