@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8">
+
+      <div class="container" id="main">
+
+        <span class="font-settings-droid">
+          Halaman yang berisi daftar nomor telepon Pusat Kesehatan Masyarakat (Puskesmas) yang berada di kota Jakarta
+          dan sekitarnya. Gunakan kotak pencarian
+          di bawah ini untuk melakukan pencarian dengan cepat.
+        </span>
+
+        <!--kotak pencarian-->
+        <div class="padding-searchbar">
+
+          <div class="well well-lg">
+            <form>
+              <div class="lebar-input-search">
+                <label for="form_pencarian">Kotak Pencarian</label>
+                <input type="text" class="form-control" id="form_pencarian" name="input_form_pencarian"
+                       placeholder="Kata kunci nama daerah Puskesmas" [(ngModel)]="search_katakunci_puskesmas">
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!--progressbar-->
+        <div *ngIf="isLoadingBar" class="progress-line-load"></div>
+
+        <!--<div id="garis-pemisah-hr">-->
+        <!--<hr>-->
+        <!--</div>-->
+
+        <!--daftar kontak rumah sakit dalam list-->
+        <ul class="list-unstyled" id="list-kontak">
+
+          <li *ngFor="let kontakitem of listKontakData | filterSearchPuskesmas : search_katakunci_puskesmas">
+
+            <div class="list-item-kontak-namenumber">
+              <div class="circle-app-name-orange">
+              </div>
+            </div>
+
+            <div class="list-item-kontak-namenumber">
+              <span class="list-item-kontak-span-title">
+                {{kontakitem.nama_Puskesmas}}
+              </span>
+              <br>
+              <span>
+                {{kontakitem.location.alamat}}
+              </span>
+              <br>
+              <span class="list-item-kontak-span-subtitle">
+                Telp : <span>{{kontakitem.telepon | susunTelepon}}</span>
+              </span>
+              <br>
+              <span>
+                <button class="button-link" (click)="openGoogleMapsLocation(kontakitem.location)">Lihat lokasi di Google Maps</button>
+              </span>
+            </div>
+
+            <div class="garis-pemisah-hr-listitem"></div>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <br>
+      <br>
+
+    </div>
+
+  </div>
+</div>

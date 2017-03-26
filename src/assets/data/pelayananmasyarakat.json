@@ -1,0 +1,79 @@
+{
+  "data": {
+    "status": "success",
+    "kontak": [
+      {
+        "nama": "Call Center PLN (Perusahaan Listrik Negara)",
+        "telepon": "123"
+      },
+      {
+        "nama": "Kantor PDAM Bandung",
+        "telepon": "022 2509 030"
+      },
+      {
+        "nama": "Kantor PDAM Bandung",
+        "telepon": "022 2509 032"
+      },
+      {
+        "nama": "Kantor PDAM Bandung",
+        "telepon": "022 2503 582"
+      },
+      {
+        "nama": "Kantor PDAM Bandung",
+        "telepon": "022 2506 581"
+      },
+      {
+        "nama": "Pelayanan Gangguan Air",
+        "telepon": "022 2509 031"
+      },
+      {
+        "nama": "Pelayanan atau Informasi Pencatatan Meter Air",
+        "telepon": "022 2512 620"
+      },
+      {
+        "nama": "Informasi Tagihan Rekening Air",
+        "telepon": "022 5309 999"
+      },
+      {
+        "nama": "Call Center Telkom",
+        "telepon": "147"
+      },
+      {
+        "nama": "Pengaduan Gangguan Telepon",
+        "telepon": "117"
+      },
+      {
+        "nama": "Informasi Tagihan Telepon",
+        "telepon": "109"
+      },
+      {
+        "nama": "Pelayanan Informasi Jasa Pos",
+        "telepon": "161"
+      },
+      {
+        "nama": "Komnas HAM",
+        "telepon": "021 3925 230"
+      },
+      {
+        "nama": "Yayasan Lembaga Bantuan Konsumen Indonesia YLBKI",
+        "telepon": "022 7071 1602"
+      },
+      {
+        "nama": "Lembaga Bantuan Hukum",
+        "telepon": "022 7279 956"
+      },
+      {
+        "nama": "Pesan Antar McDonalds",
+        "telepon": "14045"
+      },
+      {
+        "nama": "Pesan Antar Pizza Hut",
+        "telepon": "1500 600"
+      },
+      {
+        "nama": "Pesan Antar KFC",
+        "telepon": "14022"
+      }
+    ]
+  }
+}

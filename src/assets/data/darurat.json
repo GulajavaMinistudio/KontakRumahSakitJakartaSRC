@@ -1,0 +1,95 @@
+{
+  "data": {
+    "status": "success",
+    "kontak": [
+      {
+        "nama": "Pemadam Kebakaran",
+        "telepon": "113"
+      },
+      {
+        "nama": "Dinas Pencegahan dan Penanggulangan Kebakaran Kota Bandung",
+        "telepon": "022 720 7113"
+      },
+      {
+        "nama": "Ambulance",
+        "telepon": "118"
+      },
+      {
+        "nama": "PMI Daerah Jawa Barat Cabang Kota Bandung",
+        "telepon": "022 250 0095"
+      },
+      {
+        "nama": "Informasi untuk Pelayanan Transfusi Darah",
+        "telepon": "022 420 7051"
+      },
+      {
+        "nama": "Informasi untuk Pelayanan Transfusi Darah",
+        "telepon": "022 420 7052"
+      },
+      {
+        "nama": "Siaga P3K dan Pelayanan Bencana",
+        "telepon": "022 421 3858"
+      },
+      {
+        "nama": "Siaga P3K dan Pelayanan Bencana Cabang Kabupaten Bandung di Soreang",
+        "telepon": "022 589 1313"
+      },
+      {
+        "nama": "Badan SAR Nasional",
+        "telepon": "115"
+      },
+      {
+        "nama": "Badan SAR Nasional",
+        "telepon": "021 6570 1116"
+      },
+      {
+        "nama": "Sentra Informasi Keracunan",
+        "telepon": "021 4250 767"
+      },
+      {
+        "nama": "Sentra Informasi Keracunan",
+        "telepon": "021 4227 875"
+      },
+      {
+        "nama": "Polisi",
+        "telepon": "112"
+      },
+      {
+        "nama": "Polisi",
+        "telepon": "110"
+      },
+      {
+        "nama": "Polda Jabar (Komando Kendali Komunikasi dan Informasi)",
+        "telepon": "022 7800 166"
+      },
+      {
+        "nama": "Polda Jabar (Komando Kendali Komunikasi dan Informasi)",
+        "telepon": "022 7804 777"
+      },
+      {
+        "nama": "Polrestabes Bandung",
+        "telepon": "022 4203 500"
+      },
+      {
+        "nama": "Polrestabes Bandung",
+        "telepon": "022 4244 444"
+      },
+      {
+        "nama": "Polres Kota Cimahi",
+        "telepon": "022 6652 095"
+      },
+      {
+        "nama": "Polres Kota Cimahi",
+        "telepon": "022 6640 444"
+      },
+      {
+        "nama": "Layanan Informasi Polres Kota Cimahi via SMS",
+        "telepon": "085 6243 23888"
+      },
+      {
+        "nama": "Sentral Pelayanan Kepolisian Polres Bandung",
+        "telepon": "022 8587 1965"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+#main {
+  background: #fdfdfd;
+  padding: 20px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  width: 100%;
+  /*max-width: 740px;*/
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12pt;
+}
+
+.img-teks-judul {
+  width: 260px;
+  height: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.about-date p {
+  color: #6E7783;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.about-date p i {
+  color: salmon;
+}
+
+.about-date p {
+  font-weight: bold;
+}

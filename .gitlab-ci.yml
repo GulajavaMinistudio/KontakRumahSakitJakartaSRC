@@ -1,0 +1,37 @@
+image: node:latest
+
+before_script:
+  - apt-get --quiet update --yes
+  - apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1
+
+#  install node js
+  - apt-get --quiet install -y build-essential
+  - curl -sL http://deb.nodesource.com/setup_6.x | bash -
+  - apt-get --quiet install -y nodejs
+  - apt-get --quiet update --yes
+  - npm -v
+  - npm install -g @angular/cli@latest
+
+stages:
+  - test
+  - deploy
+
+#deploy debug
+test:
+  stage: test
+  script:
+    - npm install
+    - ng build
+  artifacts:
+    paths:
+    - dist/
+
+#deploy build production
+deploy:
+  stage: deploy
+  script:
+    - npm install
+    - ng build --prod
+  artifacts:
+    paths:
+    - dist/

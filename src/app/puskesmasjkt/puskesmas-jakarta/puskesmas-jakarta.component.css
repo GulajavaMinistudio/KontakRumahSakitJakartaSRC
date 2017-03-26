@@ -1,0 +1,99 @@
+#main {
+  background: #fdfdfd;
+  padding: 20px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  width: 100%;
+  /*max-width: 740px;*/
+  box-sizing: border-box;
+  margin: 0 auto
+}
+
+/*progress line loading awal halaman*/
+.progress-line-load, .progress-line-load:before {
+  height: 3px;
+  width: 100%;
+  margin: 0;
+}
+
+.progress-line-load {
+  background-color: transparent;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.progress-line-load:before {
+  background-color: #DD356E;
+  content: '';
+  -webkit-animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@-webkit-keyframes running-progress {
+  0% {
+    margin-left: 0;
+    margin-right: 100%;
+  }
+  50% {
+    margin-left: 25%;
+    margin-right: 0;
+  }
+  100% {
+    margin-left: 100%;
+    margin-right: 0;
+  }
+}
+
+@keyframes running-progress {
+  0% {
+    margin-left: 0;
+    margin-right: 100%;
+  }
+  50% {
+    margin-left: 25%;
+    margin-right: 0;
+  }
+  100% {
+    margin-left: 100%;
+    margin-right: 0;
+  }
+}
+
+/*tombol untuk menampilkan lokasi di google maps*/
+.button-link {
+  padding: 4px 15px;
+  background: #D4DFE6;
+  margin-top: 8px;
+  color: #607D8B;
+  font-weight: bold;
+  font-size: 10pt;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: solid 1px #ABD0CE;
+  /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);*/
+  /*-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);*/
+  /*-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);*/
+  /*box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px;*/
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button-link:hover {
+  background: #a6b1b8;
+  border: solid 1px #ABD0CE;
+  text-decoration: none;
+}
+
+.button-link:active {
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  background: #828c93;
+  border: solid 1px #ABD0CE;
+}
