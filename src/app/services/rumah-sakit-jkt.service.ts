@@ -27,6 +27,10 @@ export class RumahSakitJktService {
     const urlReqRSU = BASE_URLS + this.urlServiceRumahSakitUmum;
     const urlReqRSK = BASE_URLS + this.urlServiceRumahSakitKhusus;
 
+    // let paramsUrls = new URLSearchParams();
+    // paramsUrls.set('callback', 'JSONP_CALLBACK');
+    // optionReq.params = paramsUrls;
+
     const observablePuskesmas = this._http.get(urlReqPuskesmas, optionReq)
       .map(this.parserData.extractData)
       .catch(this.parserData.handleErrorMsg);
