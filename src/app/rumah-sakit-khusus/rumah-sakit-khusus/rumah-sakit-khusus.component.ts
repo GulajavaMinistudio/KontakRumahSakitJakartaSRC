@@ -13,7 +13,7 @@ import {WindowGetterService} from '../../sharedmod/window-getter.service';
 export class RumahSakitKhususComponent implements OnInit, OnDestroy {
 
 
-  private search_katakunci = '';
+  private search_katakunci_rsk = '';
   private listKontakData: KontakItemRSK[] = [];
 
   private isLoadingBar = false;

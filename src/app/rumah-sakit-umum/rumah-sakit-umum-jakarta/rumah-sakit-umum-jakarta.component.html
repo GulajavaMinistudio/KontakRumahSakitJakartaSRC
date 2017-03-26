@@ -21,7 +21,7 @@
               <div class="lebar-input-search">
                 <label for="form_pencarian">Kotak Pencarian</label>
                 <input type="text" class="form-control" id="form_pencarian" name="input_form_pencarian"
-                       placeholder="Kata kunci nama rumah sakit" [(ngModel)]="search_katakunci">
+                       placeholder="Kata kunci nama rumah sakit" [(ngModel)]="search_katakunci_rsu">
               </div>
             </form>
           </div>
@@ -37,7 +37,7 @@
         <!--daftar kontak rumah sakit dalam list-->
         <ul class="list-unstyled" id="list-kontak">
 
-          <li *ngFor="let kontakitem of listKontakData | filterSearchRsu : search_katakunci">
+          <li *ngFor="let kontakitem of listKontakData | filterSearchRsu : search_katakunci_rsu">
 
             <div class="list-item-kontak-namenumber">
               <div class="circle-app-name-green">
