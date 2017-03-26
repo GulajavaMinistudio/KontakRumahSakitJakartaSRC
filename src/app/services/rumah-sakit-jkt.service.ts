@@ -7,10 +7,14 @@ import {Observable} from 'rxjs';
 @Injectable()
 export class RumahSakitJktService {
 
-  private urlServicePuskesmas = '/puskesmas';
-  private urlServiceRumahSakitUmum = '/rumahsakitumum';
-  private urlServiceRumahSakitKhusus = '/rumahsakitkhusus';
+  // error dijalankan jika hostingnya bersifat https
+  // private urlServicePuskesmas = '/puskesmas';
+  // private urlServiceRumahSakitUmum = '/rumahsakitumum';
+  // private urlServiceRumahSakitKhusus = '/rumahsakitkhusus';
 
+  private urlServicePuskesmas = '/puskesmas.json';
+  private urlServiceRumahSakitUmum = '/rsu.json';
+  private urlServiceRumahSakitKhusus = '/rsk.json';
 
   constructor(private _http: Http,
               private parserData: ParserDataService) {
@@ -18,14 +22,19 @@ export class RumahSakitJktService {
 
   getSemuaKontakRS(): any {
 
-    const headerReq = new Headers();
+    let headerReq = new Headers();
     headerReq.set('Authorization', DATA_AKSES_API);
-    const optionReq = new RequestOptions();
+
+    let optionReq = new RequestOptions();
     optionReq.headers = headerReq;
 
     const urlReqPuskesmas = BASE_URLS + this.urlServicePuskesmas;
     const urlReqRSU = BASE_URLS + this.urlServiceRumahSakitUmum;
     const urlReqRSK = BASE_URLS + this.urlServiceRumahSakitKhusus;
+
+    // let paramsUrls = new URLSearchParams();
+    // paramsUrls.set('callback', 'JSONP_CALLBACK');
+    // optionReq.params = paramsUrls;
 
     const observablePuskesmas = this._http.get(urlReqPuskesmas, optionReq)
       .map(this.parserData.extractData)

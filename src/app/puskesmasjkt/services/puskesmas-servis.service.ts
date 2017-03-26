@@ -6,7 +6,8 @@ import {BASE_URLS, DATA_AKSES_API} from '../../kontak-akses/kontak-data-akses';
 @Injectable()
 export class PuskesmasServisService {
 
-  private urlService = '/puskesmas';
+  // private urlService = '/puskesmas';
+  private urlService = '/puskesmas.json';
   private headerTipeJson = 'application/json';
 
   constructor(private _http: Http,
