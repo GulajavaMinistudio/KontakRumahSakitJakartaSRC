@@ -12,10 +12,10 @@ import {WindowGetterService} from '../../sharedmod/window-getter.service';
 })
 export class PuskesmasJakartaComponent implements OnInit, OnDestroy {
 
-  private search_katakunci_puskesmas = '';
-  private listKontakData: KontakItemPuskesmas[] = [];
+  public search_katakunci_puskesmas = '';
+  public listKontakData: KontakItemPuskesmas[] = [];
 
-  private isLoadingBar = false;
+  public isLoadingBar = false;
 
   constructor(private httpServ: PuskesmasServisService,
               private stores: StoreDataService,

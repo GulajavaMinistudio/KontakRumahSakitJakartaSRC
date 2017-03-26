@@ -13,10 +13,10 @@ import {WindowGetterService} from '../../sharedmod/window-getter.service';
 export class RumahSakitKhususComponent implements OnInit, OnDestroy {
 
 
-  private search_katakunci_rsk = '';
-  private listKontakData: KontakItemRSK[] = [];
+  public search_katakunci_rsk = '';
+  public listKontakData: KontakItemRSK[] = [];
 
-  private isLoadingBar = false;
+  public isLoadingBar = false;
 
   constructor(private httpServ: RumahSakitKhususService,
               private stores: StoreDataService,
