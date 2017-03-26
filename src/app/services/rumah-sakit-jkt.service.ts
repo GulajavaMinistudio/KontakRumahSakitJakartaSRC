@@ -18,9 +18,10 @@ export class RumahSakitJktService {
 
   getSemuaKontakRS(): any {
 
-    const headerReq = new Headers();
+    let headerReq = new Headers();
     headerReq.set('Authorization', DATA_AKSES_API);
-    const optionReq = new RequestOptions();
+
+    let optionReq = new RequestOptions();
     optionReq.headers = headerReq;
 
     const urlReqPuskesmas = BASE_URLS + this.urlServicePuskesmas;
