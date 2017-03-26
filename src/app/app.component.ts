@@ -37,7 +37,7 @@ export class AppComponent implements OnInit, OnDestroy {
   // ambil semua data rumah sakit dari api server
   getSemuaDataRumahSakitJKT(): void {
 
-    this.showLoadingBar();
+    // this.showLoadingBar();
 
     this.httpServ.getSemuaKontakRS()
       .subscribe(

@@ -146,7 +146,7 @@ html, body {
   width: 25px;
   height: 25px;
   margin-right: 15px;
-  background: #EA5455;
+  background: #FF7E67;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
@@ -156,7 +156,7 @@ html, body {
   width: 25px;
   height: 25px;
   margin-right: 15px;
-  background: #3ac569;
+  background: #CDDC39;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
@@ -166,7 +166,7 @@ html, body {
   width: 25px;
   height: 25px;
   margin-right: 15px;
-  background: #F68657;
+  background: #FFC107;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
@@ -196,7 +196,7 @@ html, body {
 }
 
 .progress-line:before {
-  background-color: #e5f43f;
+  background-color: #CDDC39;
   content: '';
   -webkit-animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
