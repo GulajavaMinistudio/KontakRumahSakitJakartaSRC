@@ -6,7 +6,8 @@ import {BASE_URLS, DATA_AKSES_API} from '../../kontak-akses/kontak-data-akses';
 @Injectable()
 export class RumahSakitKhususService {
 
-  private urlService = '/rumahsakitkhusus';
+  // private urlService = '/rumahsakitkhusus';
+  private urlService = '/rsu.json';
 
   constructor(private _http: Http,
               private parser_data: ParserDataService) {

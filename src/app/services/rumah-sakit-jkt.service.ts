@@ -7,10 +7,14 @@ import {Observable} from 'rxjs';
 @Injectable()
 export class RumahSakitJktService {
 
-  private urlServicePuskesmas = '/puskesmas';
-  private urlServiceRumahSakitUmum = '/rumahsakitumum';
-  private urlServiceRumahSakitKhusus = '/rumahsakitkhusus';
+  // error dijalankan jika hostingnya bersifat https
+  // private urlServicePuskesmas = '/puskesmas';
+  // private urlServiceRumahSakitUmum = '/rumahsakitumum';
+  // private urlServiceRumahSakitKhusus = '/rumahsakitkhusus';
 
+  private urlServicePuskesmas = '/puskesmas.json';
+  private urlServiceRumahSakitUmum = '/rsu.json';
+  private urlServiceRumahSakitKhusus = '/rsk.json';
 
   constructor(private _http: Http,
               private parserData: ParserDataService) {
