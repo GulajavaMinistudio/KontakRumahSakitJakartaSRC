@@ -7,7 +7,7 @@ import {BASE_URLS, DATA_AKSES_API} from '../../kontak-akses/kontak-data-akses';
 export class RumahSakitKhususService {
 
   // private urlService = '/rumahsakitkhusus';
-  private urlService = '/rsu.json';
+  private urlService = '/rsk.json';
 
   constructor(private _http: Http,
               private parser_data: ParserDataService) {
